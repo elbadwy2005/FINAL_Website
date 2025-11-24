@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Variable-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: linear-gradient(rgba(0, 15, 0, 0.95), rgba(0, 45, 0, 0.70)), url("IMG_8268 2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+    h1 {
+        font: 500 42pt/1.4em 'BBH Sans Bogle';
+        color: rgba(248, 203, 70, 1);
+        text-align: center;
+    } 
+    #body {
+        font: 15pt/1.4em 'Abel';
+        width: 600px;
+        color: rgba(248, 203, 70, 1);
+        margin: -36px auto 0 auto;
+    } 
+    #image-row {
+        width: 600px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; 
+    }
+    .image-box {
+        width: 58%;
+        height: 280px; 
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+    }
+    #controls {
+        margin: 20px auto;
+        text-align: center;
+    }
+    #controls button {
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 15, 0, 1);
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14pt;
+        font-family: 'Abel';
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #controls button:hover {
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 15, 0, 1);
+    }
+	
+	.big-button {
+    display: inline-block;
+    background-color: rgba(248, 203, 70, 1);
+    color: rgba(0, 15, 0, 1);
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .big-button:hover {
+    background-color: rgba(248, 203, 70, 1);
+    color: rgba(0, 15, 0, 1);
+    }
+	
+</style>
+</head>
+
+<body>
+   <div id="button-container" style="text-align:center; margin-top: 10px;">
+        <a href="index.html"><button class="big-button">Home</button></a>
+        <a href="portfolio_page_layout.html"><button class="big-button">Portfolio of works</button></a>
+        <a href="Grid_layout_page.html"><button class="big-button">Additional works</button></a>
+        <a href="Tables_page.html"><button class="big-button">Individual work information</button></a>
+        <a href="type sample.html"><button class="big-button">Inspiration behind works</button></a>
+        <a href="Form page WBS.html"><button class="big-button">Forms/contact</button></a>
+    </div>
+	
+<h1>My inspiration in my art and design works</h1>
+
+<p id="body">
+With all my drawing and design works, I have a diverse variety of different inspiration creating them. With each of my work and my particular influences for each one has a unique reasoning behind them and they each make my works uniquely different in their own ways. With my landscape drawings my main inspiration for those is watching Bob Ross paint his random landscape paintings and looking at his work and unique stroke and detail styles he use to create his work inspired me and influenced my own style and tried to be similar to his style in way but using markers and looking at most marker artworks out there I’ve never seen a style that Ross used and I felt that with the style that inspired my way of doing landscape drawings had a huge influence from seeing Bob Ross. With some of my sports drawings, I’ve also applied the same style at certain times using my stroke styles I use in my actual landscape drawings. With my design works, my inspiration varies by each project I work on during a specific time but there have been times where other students have inspired me to be creative with my certain designs.
+</p>
+
+<div id="image-row">
+    <div class="image-box" style="background-image: url('IMG_8271.jpeg');"></div>
+    <div class="image-box" style="background-image: url('GRC 210 PROJECT 5 MU copy.jpg');"></div>
+</div>
+
+<div id="controls">
+    <button onclick="makeBold()">Bold Text</button>
+    <button onclick="resetBold()">Reset Text</button>
+</div>
+
+<script>
+function makeBold() {
+    document.getElementById('body').style.fontWeight = 'bold';
+}
+
+function resetBold() {
+    document.getElementById('body').style.fontWeight = 'normal';
+}
+</script>
+
+</body>
+</html>
+
+

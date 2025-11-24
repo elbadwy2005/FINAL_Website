@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: rgba(0, 0, 70, 1);
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    }
+
+    h1 {
+        font: 40pt/1.4em 'BBH Sans Bogle';
+        text-align: center;
+        color: rgba(248, 203, 70, 1);
+        margin: 24px 0;
+    }
+
+    /* BUTTON BAR (COPIED FROM FIRST HTML) */
+    #button-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .big-button {
+        display: inline-block;
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 0, 70, 1);
+        font-size: 12pt;
+        font-weight: bold;
+        padding: 8px 16px;
+        margin: 6px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Abel', sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .big-button:hover {
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 0, 70, 1);
+    }
+
+    #textbox {
+        width: 1024px;
+        margin: 0 auto;
+        background: rgba(248, 203, 70, 1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    figure {
+        margin: 24px;
+        width: 200px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    }
+
+    figcaption {
+        font: 12pt/1.4em 'Abel';
+        margin-top: 3px;
+        color: rgba(0, 0, 70, 1);
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    }
+
+    .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }
+
+    /* Bold/Reset Buttons */
+    #controls {
+        text-align: center;
+        margin: 24px auto 40px auto;
+    }
+
+    #controls span {
+        display: inline-block;
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 0, 70, 1);
+        padding: 12px 24px;
+        margin: 0 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        font-family: 'Abel', sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    #controls span:hover {
+        background-color: rgba(248, 203, 70, 1);
+        color: rgba(0, 0, 70, 1);
+    }
+</style>
+</head>
+
+<body>
+    <div id="button-container">
+         <a href="index.html"><button class="big-button">Home</button></a>
+         <a href="portfolio_page_layout.html"><button class="big-button">Portfolio of works</button></a>
+         <a href="Grid_layout_page.html"><button class="big-button">Additional works</button></a>
+         <a href="Tables_page.html"><button class="big-button">Individual work information</button></a>
+         <a href="type sample.html"><button class="big-button">Inspiration behind works</button></a>
+         <a href="Form page WBS.html"><button class="big-button">Forms/contact</button></a>
+    </div>
+	
+	<h1>Landscape Drawings and Design Project Pieces</h1>
+
+    <div id="textbox">
+        <!-- Your image gallery remains unchanged -->
+        <figure>
+            <a href="IMG_8268.jpeg">
+                <img src="IMG_8268.jpeg" />
+            </a>
+            <figcaption>
+                A scene with colorful grasses and flowers with evergreens and bright trees, a snowy mountain, and a blue sky.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="IMG_8269.jpeg">
+                <img src="IMG_8269.jpeg" />
+            </a>
+            <figcaption>
+                A scene with evergreen trees, a lake, colorful grass, a snowy mountain, and grey clouds in the blue sky.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="IMG_8271.jpeg">
+                <img src="IMG_8271.jpeg" />
+            </a>
+            <figcaption>
+                A scene with a lake with an island of evergreens, flowers, grass, more forest, snowy mountains, and grey clouds.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="IMG_8272.jpeg">
+                <img src="IMG_8272.jpeg" />
+            </a>
+            <figcaption>
+                A scene during autumn in a valley with evergreens, red-orange colored trees, a lake, hills, and pink clouds in the blue sky.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="IMG_8279.jpeg">
+                <img src="IMG_8279.jpeg" />
+            </a>
+            <figcaption>
+                A scene with snowy rocky mountains, evergreen forests, a lake with a small island, and pinkish clouds in light and dark tones.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="IMG_8280.jpeg">
+                <img src="IMG_8280.jpeg" />
+            </a>
+            <figcaption>
+                A scene with a lake and a side view of an island with grass and trees, with a forest, snowy mountains, and grey clouds in the background.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="ITA SS.jpg">
+                <img src="ITA SS.jpg" />
+            </a>
+            <figcaption>
+                An Italian Shake Shack Burger Ad with the design matching the branding feel of how Shake Shack does their advertisements.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="MU 2 copy 2.jpg">
+                <img src="MU 2 copy 2.jpg" />
+            </a>
+            <figcaption>
+                A board game I created called "The Great Northwest Conquest" with a design theme based on Pacific Northwest culture and outdoors.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="GRC 250 Project 3 - mockup copy.jpg">
+                <img src="GRC 250 Project 3 - mockup copy.jpg" />
+            </a>
+            <figcaption>
+                A book design I created called "UGLY" that explores beauty among women of different cultures, creating a multicultural theme.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="8 copy 2.jpg">
+                <img src="8 copy 2.jpg" />
+            </a>
+            <figcaption>
+                A redesign of the 200 Euro banknote making it visually more interesting and connecting the design to European culture.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="record-mockup2 copy.jpg">
+                <img src="record-mockup2 copy.jpg" />
+            </a>
+            <figcaption>
+                An album cover design based on Linkin Park’s song “In the End,” inspired by the song’s lyrics and message.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="Pillow-Mockup copy.jpg">
+                <img src="Pillow-Mockup copy.jpg" />
+            </a>
+            <figcaption>
+                A pattern I created incorporating a hawk’s face with motif designs inspired by symmetry and yoga themes.
+            </figcaption>
+        </figure>
+    </div>
+
+    <div id="controls">
+        <span onclick="makeBold()">Bold Words</span>
+        <span onclick="resetBold()">Reset Words</span>
+    </div>
+
+    <script>
+        function makeBold() {
+            const captions = document.querySelectorAll('figcaption');
+            captions.forEach(caption => caption.style.fontWeight = 'bold');
+        }
+
+        function resetBold() {
+            const captions = document.querySelectorAll('figcaption');
+            captions.forEach(caption => caption.style.fontWeight = 'normal');
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EBMDYNNW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3EBMDYNNW0');
+</script>
+<title>Fixed-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #page {
+        width: 1024px;
+        min-height: 1325px;
+        background: rgba(255, 153, 0, 1);
+        margin: 24px auto;
+        position: relative; 
+        padding-bottom: 100px;
+    }
+
+    #banner {
+        width: 1024px;
+    }
+
+    h1 {
+        font: 55pt/1.4em 'BBH Sans Bogle';
+        text-align: center;
+        margin: 25px 0 0 0;
+        color: rgba(0, 0, 70, 1);
+    }
+
+    p {
+        font: 13pt/1.4em 'Abel';
+        width: 768px;
+        margin: 24px auto;
+        clear: both; 
+        text-align: left;
+        color: rgba(0, 0, 70, 1);
+    }
+
+    .float-left {
+        width: 350px;
+        height: 364px;
+        float: left;
+        margin: 0 24px 24px 0; 
+    } 
+
+    li {
+        font: 14pt/2.0em 'Abel';
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: brown;
+    }
+
+    #button-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .big-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 70, 1);
+    color: rgba(255, 153, 0, 1);
+    font-size: 12pt;       
+    font-weight: bold;
+    padding: 8px 16px;     
+    margin: 6px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    } 
+
+    .big-button:hover {
+    background-color: rgba(0, 0, 70, 1);
+    color: rgba(255, 153, 0, 1);
+    }
+
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #controls span {
+        display: inline-block;
+        background-color: rgba(0, 0, 70, 1);
+        color: rgba(255, 153, 0, 1);
+        padding: 6px 18px;
+        margin: 0 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        font-family: 'Abel', sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    #controls span:hover {
+        background-color: rgba(0, 0, 70, 1);
+        color: rgba(255, 153, 0, 1);
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="webbanner.jpg" />
+
+        <div id="button-container">
+             <a href="index.html"><button class="big-button">Home</button></a>
+             <a href="portfolio_page_layout.html"><button class="big-button">Portfolio of works</button></a>
+             <a href="Grid_layout_page.html"><button class="big-button">Additional works</button></a>
+             <a href="Tables_page.html"><button class="big-button">Individual work information</button></a>
+             <a href="type sample.html"><button class="big-button">Inspiration behind works</button></a>
+             <a href="Form page WBS.html"><button class="big-button">Forms/contact</button></a>
+        </div>
+
+        <h1>Art and Design Portfolio</h1>
+
+        <p>
+            <img class="float-left" src="IMG_8268 copy.jpeg" />
+            Art has been one of my strongest skills for years, and it is something I truly enjoy doing as a hobby. I especially enjoy drawing, and I paint occasionally, though painting is something I am starting to explore more seriously. Most of my creative time is spent drawing, which allows me to focus on details and practice different techniques. I commonly focus on landscapes and sports logo designs. For landscapes, I often create evergreen forest and mountain scenes, experimenting with lighting and shading to make the scenes feel more realistic and dynamic. In sports logo art, I usually draw the logos of my favorite teams, the Seahawks and Broncos, and I like to create unique and creative variations of their logos.
+        </p>
+
+        <p>
+            <img class="float-left" src="UGLY_B.png" />
+            My passion for art and fascination with sports logos led me to major in graphic design, and I have created many designs over the past few years. I have designed book covers, campaign materials, digital illustrations, and a variety of other design projects. As I completed more projects, I became increasingly interested in exploring different colors and color palettes, experimenting with how colors interact and create mood or emphasis within my work. I have also grown more interested in typography, learning to pair fonts effectively and understanding how font choices enhance the overall theme and message of each piece. This exploration has helped me develop a stronger sense of visual hierarchy and composition in my designs.
+        </p>
+
+        <div id="controls">
+            <span onclick="makeBold()">Bold Words</span>
+            <span onclick="resetBold()">Reset Words</span>
+        </div>
+    </div>
+
+    <script>
+        function makeBold() {
+            const paragraphs = document.querySelectorAll('#page p');
+            paragraphs.forEach(p => p.style.fontWeight = 'bold');
+        }
+
+        function resetBold() {
+            const paragraphs = document.querySelectorAll('#page p');
+            paragraphs.forEach(p => p.style.fontWeight = 'normal');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
